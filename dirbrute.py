@@ -1,6 +1,5 @@
 import requests
 
-
 url = input("Digite a url: ")
 
 with open("wordlist.txt", "r") as file:
@@ -12,4 +11,3 @@ for word in wordlist:
 	code = response.status_code
 	if code != 404:
 		print("{} --> {}".format(url_final, code))
-
